@@ -1,0 +1,16 @@
+{
+  "name": "angular-markdown-filter",
+  "version": "0.0.1",
+  "main": "markdown.js",
+  "keywords": [
+    "angular",
+    "markdown",
+    "filter",
+    "showdown"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.0.5",
+    "showdown": "~0.3.1"
+  }
+}
