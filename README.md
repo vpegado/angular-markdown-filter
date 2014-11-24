@@ -40,5 +40,5 @@ angular.module('myApp')
   });
 ```
 ```html
-<div class="container">{{ text | markdown }}</div>
+<div class="container" ng-bind-html="text | markdown"></div>
 ```
