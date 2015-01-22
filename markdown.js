@@ -10,10 +10,10 @@ angular.module('markdown', [])
             }
         };
     })
-    .filter('markdown', function ($sce, markdown) {
+    .filter('markdown', ['$sce', 'markdown', function ($sce, markdown) {
         return function (text) {
             if(text == null) text = '';
             var html = markdown.makeHtml(text);
             return $sce.trustAsHtml(html);
         };
-    });
+    }]);
