@@ -10,8 +10,8 @@ $ bower install angular-markdown-filter
 
 ## Import dependencies
 ```html
-<script src="/bower_components/showdown/compressed/showdown.js"></script>
-<script src="/bower_components/angular-markdown-filter/markdown.js"></script>
+<script src="bower_components/showdown/compressed/showdown.js"></script>
+<script src="bower_components/angular-markdown-filter/markdown.js"></script>
 ```
 ```javascript
 angular.module('myApp', [
@@ -35,8 +35,12 @@ for details on how to create extensions.
 ## Usage
 ```javascript
 angular.module('myApp')
+  .config(function ($compileProvider) {
+    // Add optional support for custom schema links: "herp://" and "derp://"
+    $compileProvider.aHrefSanitizationWhitelist(/^\s*(herp|derp):/);
+  })
   .controller('MainCtrl', function ($scope) {
-    $scope.text = '# Heading 1';
+    $scope.text = '# Heading 1\n- [Link](http://example.com)\n- [Custom Link 1](herp://is.this.working?)\n- [Custom Link 2](derp://is.this.working?)';
   });
 ```
 ```html
