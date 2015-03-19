@@ -5,16 +5,18 @@ Markdown filter for Angular
 
 ## Installation
 ```bash
-$ bower install angular-markdown-filter
+$ bower install angular-markdown-filter angular-sanitize
 ```
 
 ## Import dependencies
 ```html
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
 <script src="bower_components/showdown/compressed/showdown.js"></script>
 <script src="bower_components/angular-markdown-filter/markdown.js"></script>
 ```
 ```javascript
 angular.module('myApp', [
+  'ngSanitize',
   'markdown'
 ]);
 ```
