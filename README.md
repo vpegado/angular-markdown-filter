@@ -5,18 +5,23 @@ Markdown filter for Angular
 
 ## Installation
 ```bash
-$ bower install angular-markdown-filter angular-sanitize
+$ bower install angular-markdown-filter
+```
+It's recomended to also use [ngSanitize](https://docs.angularjs.org/api/ngSanitize) if you plan to bind the output to [ngBindHtml](https://docs.angularjs.org/api/ng/directive/ngBindHtml) to pervent [XSS](https://www.owasp.org/index.php/Cross-site_Scripting_%28XSS%29).
+```bash
+$ bower install angular-sanitize
 ```
 
 ## Import dependencies
 ```html
-<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
 <script src="bower_components/showdown/compressed/showdown.js"></script>
 <script src="bower_components/angular-markdown-filter/markdown.js"></script>
+<!-- Optional: -->
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
 ```
 ```javascript
 angular.module('myApp', [
-  'ngSanitize',
+  'ngSanitize', // Optional
   'markdown'
 ]);
 ```
@@ -37,6 +42,7 @@ for details on how to create extensions.
 ## Usage
 ```javascript
 angular.module('myApp')
+  // Optional Config
   .config(function ($compileProvider) {
     // Add optional support for custom schema links: "herp://" and "derp://"
     $compileProvider.aHrefSanitizationWhitelist(/^\s*(herp|derp):/);
