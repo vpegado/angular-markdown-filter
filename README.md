@@ -7,7 +7,7 @@ Markdown filter for Angular
 ```bash
 $ bower install angular-markdown-filter
 ```
-It's recomended to also use [ngSanitize](https://docs.angularjs.org/api/ngSanitize) if you plan to bind the output to [ngBindHtml](https://docs.angularjs.org/api/ng/directive/ngBindHtml) to pervent [XSS](https://www.owasp.org/index.php/Cross-site_Scripting_%28XSS%29).
+It's recomended to also use [ngSanitize](https://docs.angularjs.org/api/ngSanitize) if you plan to bind the output using [ngBindHtml](https://docs.angularjs.org/api/ng/directive/ngBindHtml) to pervent [XSS](https://www.owasp.org/index.php/Cross-site_Scripting_%28XSS%29).
 ```bash
 $ bower install angular-sanitize
 ```
