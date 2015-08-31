@@ -8,7 +8,7 @@ angular.module('markdown', [])
         opts = newOpts;
       },
       $get: function () {
-        return new window.Showdown.converter(opts);
+        return new window.showdown.Converter(opts);
       }
     };
   }])
