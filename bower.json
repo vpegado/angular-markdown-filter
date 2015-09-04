@@ -11,6 +11,6 @@
   "license": "MIT",
   "dependencies": {
     "angular": ">=1.2.*",
-    "showdown": "~0.3.1"
+    "showdown": "~1.0.0"
   }
 }
