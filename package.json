@@ -1,0 +1,25 @@
+{
+  "name": "angular-markdown-filter",
+  "version": "1.3.0",
+  "description": "Markdown filter for Angular",
+  "main": "markdown.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vpegado/angular-markdown-filter.git"
+  },
+  "keywords": [
+    "angular",
+    "markdown",
+    "filter",
+    "showdown"
+  ],
+  "author": "Victor Pegado",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vpegado/angular-markdown-filter/issues"
+  },
+  "homepage": "https://github.com/vpegado/angular-markdown-filter#readme"
+}
