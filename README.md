@@ -18,7 +18,7 @@ $ bower install angular-sanitize
 
 ## Import dependencies
 ```html
-<script src="bower_components/showdown/compressed/showdown.js"></script>
+<script src="bower_components/showdown/dist/showdown.min.js"></script>
 <script src="bower_components/angular-markdown-filter/markdown.js"></script>
 <!-- Optional: -->
 <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
@@ -39,7 +39,7 @@ angular.module('markdown')
       extensions: ['table']
     });
   });
-``` 
+```
 see the [Showdown documentation](https://github.com/showdownjs/showdown#creating-markdown-extensions)
 for details on how to create extensions.
 
